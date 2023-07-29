@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    padding: 25px;
+    width: 600px;
+    height: 400px;
+    position: relative;
+    border-radius: 30px;
+    border-bottom-right-radius: 100px;
+    background-color: aliceblue;
+}
+
+form{
+    display: flex;
+}
+
+.box{
+    margin-left: 50px;
+}
+
+.box input{
+    width: 100px;
+    height: 50px;
+    border-radius: 3px;
+    font-size: 30px;
+    border: 1px solid gray;
+}
+
+.box label{
+    display: block;
+    margin-bottom: 5px;
+    font-size: 20px;
+    font-weight: 800;
+    color: gray;
+}
+
+.hr{
+    border-bottom: 1px solid gray;
+    margin-top: 17px;
+    margin-left: 50px;
+}
+
+.btn{
+    display: inline-block;
+    padding: 15px 18px;
+    font-size: 20px;
+    background-color: blueviolet;
+    color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 95px;
+    right: 20px;
+}
+
+.age{
+    margin: 20px 0 0 50px;
+}
+
+.age span{
+    color: blueviolet;
+}
+
+.age p{
+    font-size: 70px;
+    margin: 5px 0;
+}
+
+@media (max-width: 576px) {
+    .container{
+        padding: 20px 0 0 0;
+        width: 400px;
+        height: 500px;
+        margin: 15px;
+    }
+
+    .box input{
+        width: 75px ;
+    }
+
+    .btn{
+        top: 120px;
+        right: 157px;
+    }
+
+    .hr{
+        margin: 48px 20px 0 50px;
+    }
+}
