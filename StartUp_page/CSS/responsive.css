@@ -1,0 +1,150 @@
+@media (max-width: 375px){
+
+    body{
+        width: 100%;
+    }
+
+    .logo{
+        font-size: 30px;
+    }
+
+    .logo img{
+        width: 45px;
+    }
+
+    .bars{
+        display: block;
+    }
+
+    .nav-links{
+        flex-direction: column;
+        position: absolute;
+        padding-left: 0 ;
+        width: 100%;
+        top: 50px;
+        left: 0;
+        display: none;
+        background-color:azure  ;
+        opacity: 0.8;
+        animation-name: drop;
+        animation-delay: 0;
+        animation-duration: 1s;
+    }
+
+    @keyframes drop {
+        from{
+            top: 0;
+        }
+
+        to{
+            top: 50px;
+        }
+    }
+
+    .nav-link-item{
+        color: #fff;
+        width: 100%;
+        padding: 10px 163px;
+        margin-left: 0;
+        margin-right: 30px;
+        color: var(--gray);
+        transition: ease 0.5s;
+    }
+
+    .nav-link-item:hover{
+        background-color: var(--header-green);
+    }
+
+    
+
+    /* intro */
+
+    .intro{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .intro img{
+        width: 335px;
+        height: 196px;
+    }
+
+    .intro .content{
+        margin-top: 30px;
+    }
+
+    /*partners*/
+
+    .main{
+        margin: 22px auto 0;
+        width: 80%;
+    }
+
+    .partners .images img:first-child{
+        margin-top: 0;
+    }
+
+    .partners .images img{
+        margin:40px 0 0 0;
+    }
+
+    /* info */
+
+    .info-box{
+        flex-direction: column;
+        align-items: center;
+        margin-top: 59px;
+    }
+
+    .info-box:last-child{
+        flex-direction: column-reverse;
+    }
+
+    .info-box:last-child img{
+        flex-direction: column-reverse;
+        margin-right: 30px;
+    }
+
+    .info-box img{
+        width: 335px;
+        height: 240px;
+        margin-left: 20px;
+    }
+
+    .info-content{
+        margin-top: 30px;
+    }
+
+    .info-content p:nth-child(1){
+        font-size: 24px;
+        font-weight: 700;
+    }
+
+    /*team*/
+
+    .team h2{
+        font-size: 24px;
+    }
+
+    .cards{
+        flex-direction: column;
+        align-items: center;
+        margin-top: 40px;
+    }
+
+    .cards .card:not(.card:first-child){
+        margin-top: 35px;
+    }
+
+    /*footer*/
+
+    .footer-content{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        height: 100px;
+    }
+
+    
+}
